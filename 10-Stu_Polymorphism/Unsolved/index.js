@@ -28,6 +28,10 @@ class Comment extends ForumItem {
     super(authorName, createdOn);
     this.text = text;
   }
+  printMetaData() {
+    super.printMetaData();
+    console.log(`Comment: ${this.text}`);
+  }
 }
 
 const newPost = new BlogPost(
