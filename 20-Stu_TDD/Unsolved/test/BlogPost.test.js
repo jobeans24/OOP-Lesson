@@ -3,6 +3,7 @@ const Comment = require('../lib/Comment.js');
 
 describe('BlogPost', () => {
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can be instantiated
   describe('Instantiate', () => {
     it('should be an instance of BlogPost class', () => {
       const blogpost = new BlogPost();
@@ -12,6 +13,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can be instantiated with an authorName
   describe('Initialize authorName', () => {
     it('should set authorName properly', () => {
       const authorName = 'John Doe';
@@ -22,6 +24,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can be instantiated with a title
   describe('Initialize title', () => {
     it('should set title properly', () => {
       const title = 'My First Post';
@@ -32,6 +35,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can be instantiated with text
   describe('Initialize text', () => {
     it('should set text properly', () => {
       const text = 'Dogs are super cute!';
@@ -42,6 +46,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can be instantiated with createdOn
   describe('Initialize createdOn', () => {
     it('should set createdOn properly', () => {
       const createdOn = '12/15/2021';
@@ -57,6 +62,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can be instantiated with comments
   describe('Initialize comments', () => {
     it('should create blogpost array with a length of 0', () => {
       const blogpost = new BlogPost();
@@ -66,6 +72,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can add a comment to the comments array
   describe('addComment() method', () => {
     it('should add comment to comments array', () => {
       const blogpost = new BlogPost();
@@ -77,6 +84,7 @@ describe('BlogPost', () => {
   });
 
   // TODO: Add a comment describing this test.
+  // This test is checking if the BlogPost class can print the metadata
   describe('printMetaData() method', () => {
     it('should print message with data', () => {
       const blogpost = new BlogPost(
