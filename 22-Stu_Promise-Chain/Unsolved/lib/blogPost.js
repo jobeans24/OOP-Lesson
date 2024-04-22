@@ -12,7 +12,7 @@ class BlogPost {
 
     // author must contain at least 3 characters, only have letters, numbers, and underscore. Author must begin with a
     // letter.
-    if (!/[a-z][a-z0-9_]{2,}/i.test(author)) {
+    if (!/[a-z][a-z0-9_]{3,}/i.test(author)) {
       throw new Error(`Invalid author "${author}"`);
     }
 
@@ -21,7 +21,7 @@ class BlogPost {
     this.author = author;
 
     if (createdOn instanceof Date) {
-      this.createdOn = Date;
+      this.createdOn = Date.now;
     } else {
       this.createdOn = new Date(createdOn);
     }
