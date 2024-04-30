@@ -18,4 +18,9 @@ readFile('./data/post.json', 'utf-8')
   })
   .then(() => {
     console.log('Created post.html');
+  })
+  .catch((error) => {
+    console.log('An error occurred:', error);
   });
+
+
